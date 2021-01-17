@@ -1,0 +1,18 @@
+### Send request to localhost
+POST http://localhost:3978/test-post
+content-type: application/json
+
+POST http://localhost/test-post HTTP/1.1
+content-Type: application/json
+
+{
+	"body":"Empty"
+}
+
+### Send request to App Service
+POST https://<Your AppService Resource Name>.azurewebsites.net/test-post HTTP/1.1
+content-Type: application/json
+
+{
+	"body":"Empty"
+}

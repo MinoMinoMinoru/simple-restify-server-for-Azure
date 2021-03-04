@@ -1,9 +1,6 @@
 ### Send request to localhost
-POST http://localhost:3978/test-post
+POST http://localhost:3978/test-post HTTP/1.1
 content-type: application/json
-
-POST http://localhost/test-post HTTP/1.1
-content-Type: application/json
 
 {
 	"body":"Empty"
@@ -11,6 +8,23 @@ content-Type: application/json
 
 ### Send request to App Service
 POST https://<Your AppService Resource Name>.azurewebsites.net/test-post HTTP/1.1
+content-Type: application/json
+
+{
+	"body":"Empty"
+}
+
+
+### Send request to App Service
+POST http://192.168.0.20:8000 HTTP/1.1
+content-Type: application/json
+
+{
+	"body":"Empty"
+}
+
+### flask
+POST http://192.168.0.26:5000 HTTP/1.1
 content-Type: application/json
 
 {

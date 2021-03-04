@@ -2,6 +2,7 @@
 POST http://localhost:3978/test-post HTTP/1.1
 content-type: application/json
 
+<<<<<<< HEAD
 {
 	"body":"Empty"
 }
@@ -10,6 +11,8 @@ content-type: application/json
 POST https://<Your AppService Resource Name>.azurewebsites.net/test-post HTTP/1.1
 content-Type: application/json
 
+=======
+>>>>>>> 7fdc4a50c91a31890ff5baf1e12bf22d06aaeff6
 {
 	"body":"Empty"
 }
